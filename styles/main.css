@@ -17,3 +17,7 @@ footer {
     background: whitesmoke;
     height: 70px;
 }
+.input-style {
+    min-width: 110px;
+    width: 10%;
+}
