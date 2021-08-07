@@ -1,0 +1,19 @@
+
+header {
+    background: pink;
+    height: 50px;
+    
+}
+
+main {
+    background: gray;
+    height: 700px;
+}
+body {
+    margin: 0px;
+}
+
+footer {
+    background: whitesmoke;
+    height: 70px;
+}
