@@ -3,6 +3,7 @@ function f() {
     var data = document.getElementById("main");
     data.parentNode.removeChild(data);
     var main = document.createElement("main");
+
     var input1 = document.createElement("input");
     input1.type = "text";
     var input2 = document.createElement("input");
@@ -23,7 +24,7 @@ function f() {
     input3.className = "input-style form-control";
 
     main.style.background = "#1f0a07";
-
+    main.style.color = "#1f0a07"
     main.id = "main";
     document.body.firstElementChild.after(main);
 }
