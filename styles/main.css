@@ -1,12 +1,17 @@
 
 header {
-    background: pink;
-    height: 50px;
-    
+    position: fixed;
+    background: #edd537;
+    height: 40px;
+    width: 1600px;
+
 }
 
+.button {
+    padding-right: 300px;
+}
 main {
-    background: gray;
+    background: #1f0a07;
     height: 700px;
 }
 body {
@@ -14,10 +19,39 @@ body {
 }
 
 footer {
-    background: whitesmoke;
-    height: 70px;
+    background: #edd537;
+    height: 50px;
 }
 .input-style {
     min-width: 110px;
     width: 10%;
 }
+.button-enter {
+    padding-right: 30px;
+    background:#000;
+    color: #edd537;
+    padding-bottom: 0px;
+    border:#000 ;
+    padding-left: 30px;
+    padding-bottom: revert;
+    border-radius: 10px 10px 10px 10px;
+    flex-direction: column;
+
+    /*width: 408px;
+    height: 50px;
+    background: silver;
+    border-radius: 35px 0px 35px 0px;
+    border: red;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;*/
+}
+
+#plasing {
+    padding-left: 1250px;
+    padding-top: 6px;
+}
+/*margin-top: 0;*/
+/*margin-bottom: 0;*/
+/*margin-left: auto;*/
+/*margin-right: auto;*/

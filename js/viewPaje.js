@@ -1,6 +1,5 @@
 function f() {
 
-
     var data = document.getElementById("main");
     data.parentNode.removeChild(data);
     var main = document.createElement("main");
@@ -23,19 +22,8 @@ function f() {
     input3.placeholder = "pass: ";
     input3.className = "input-style form-control";
 
-    main.style.background = "green";
+    main.style.background = "#1f0a07";
 
     main.id = "main";
     document.body.firstElementChild.after(main);
-}
-
-function f2() {
-    var data = document.getElementById("main");
-    data.parentNode.removeChild(data);
-    var main = document.createElement("main");
-    main.style.background = "red";
-
-    main.id = "main";
-    document.body.firstElementChild.after(main);
-
 }
