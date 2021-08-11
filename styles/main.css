@@ -12,12 +12,11 @@ header {
 }
 main {
     background: #1f0a07;
-    height: 700px;
+    height: 2000px;
 }
 body {
     margin: 0px;
 }
-
 
 footer {
     background: #edd537;
@@ -37,7 +36,7 @@ footer {
     width: 200px;
     border: black;
 }
-.button-enter {
+#button-enter {
     padding-right: 30px;
     background:#000;
     color: #edd537;
@@ -48,10 +47,36 @@ footer {
     border-radius: 10px 10px 10px 10px;
     flex-direction: column;
 
-
 }
 
-#plasing {
-    padding-left: 1250px;
+#button-reg {
+    padding-right: 30px;
+    background:#000;
+    color: #edd537;
+    padding-bottom: 0px;
+    border:#000 ;
+    padding-left: 30px;
+    padding-bottom: revert;
+    border-radius: 10px 10px 10px 10px;
+    flex-direction: column;
+}
+.button-style {
+    position: relative;
+    margin-left: 600px;
+    padding-right: 100px;
+    padding-left: 100px;
+    color: black;
+    top: 230px;
+    border:#000 ;
+    width: 50px;
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
+    background: #edd537;
+}
+
+.plasing {
+    padding-left: 1120px;
     padding-top: 6px;
+    margin-top: 0px;
 }
+
