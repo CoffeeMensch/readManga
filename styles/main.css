@@ -68,10 +68,15 @@ footer {
     color: black;
     top: 230px;
     border:#000 ;
-    width: 50px;
+    width: 100px;
     height: 40px;
     border-radius: 10px 10px 10px 10px;
     background: #edd537;
+}
+
+#gallery {
+    padding-top: 200px;
+    padding-left: 330px;
 }
 
 .plasing {
