@@ -13,6 +13,7 @@ header {
 main {
     background: #1f0a07;
     height: 2000px;
+
 }
 body {
     margin: 0px;
@@ -23,27 +24,40 @@ footer {
     height: 50px;
 }
 .input-style {
+    padding-left: 10px;
+    display: flex;
     position: relative;
-    padding-top: 100px;
-    top: 200px;
-    margin-left: 600px;
-    margin-bottom: 5px;
+    margin-top: 5px;
     background: #edd537;
     height: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: 200px;
+    color: black;
     border: black;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.garisontalContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.verticalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
 }
 #button-enter {
     padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 2px;
     background:#000;
     color: #edd537;
-    padding-bottom: 0px;
     border:#000 ;
-    padding-left: 30px;
-    padding-bottom: revert;
     border-radius: 10px 10px 10px 10px;
     flex-direction: column;
 
@@ -51,32 +65,35 @@ footer {
 
 #button-reg {
     padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
     background:#000;
     color: #edd537;
-    padding-bottom: 0px;
     border:#000 ;
-    padding-left: 30px;
-    padding-bottom: revert;
+    /*padding-bottom: revert;*/
     border-radius: 10px 10px 10px 10px;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 .button-style {
-    position: relative;
-    margin-left: 600px;
-    padding-right: 100px;
-    padding-left: 100px;
+    margin-top: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     color: black;
-    top: 230px;
     border:#000 ;
-    width: 100px;
-    height: 40px;
+    width: 210px;
     border-radius: 10px 10px 10px 10px;
     background: #edd537;
+
 }
 
 #gallery {
     padding-top: 200px;
     padding-left: 330px;
+}
+.pictures1 {
+    border: 20px solid black;
+
 }
 
 .plasing {
@@ -84,4 +101,6 @@ footer {
     padding-top: 6px;
     margin-top: 0px;
 }
+
+
 

@@ -1,8 +1,26 @@
-function f() {
+function replaceMainContent(nameContent) {
 
     var data = document.getElementById("main");
     data.parentNode.removeChild(data);
+    var content;
+    switch (nameContent) {
+        case 'registration':
+            content = createRegistrationPanel();
+            break;
+        case 'enterPanel' :
+            content = createEnterPanel();
+            break;
+    }
+
+    document.body.firstElementChild.after(content);
+}
+
+function createEnterPanel() {
     var main = document.createElement("main");
+    var div = document.createElement("div");
+    var ul = document.createElement("ul");
+    div.className = "garisontalContainer";
+    ul.className = "verticalContainer";
 
     var input1 = document.createElement("input");
     input1.type = "text";
@@ -13,30 +31,33 @@ function f() {
     var input3 = document.createElement("input");
     input3.type = "text";
 
-    main.append(input1);
+    ul.append(input1);
     input1.placeholder = "name: ";
     input1.className = "form-control input-style";
 
-    main.append(input2);
+    ul.append(input2);
     input2.placeholder = "mail: ";
     input2.className = "form-control input-style";
 
-    main.append(input3);
+    ul.append(input3);
     input3.placeholder = "pass: ";
     input3.className = "input-style form-control";
 
-    main.style.background = "#1f0a07";
-    main.style.color = "#1f0a07"
+    ul.style.background = "#1f0a07";
+    ul.style.color = "#1f0a07"
     main.id = "main";
-    document.body.firstElementChild.after(main);
+    main.append(div);
+    div.append(ul);
+    return main;
 }
 
-function fReg() {
-
-    var data = document.getElementById("main");
-    data.parentNode.removeChild(data);
+function createRegistrationPanel() {
 
     var main = document.createElement("main");
+    var div = document.createElement("div");
+    var ul = document.createElement("ul");
+    div.className = "garisontalContainer";
+    ul.className = "verticalContainer";
 
     var input1 = document.createElement("input");
     input1.type = "text";
@@ -54,35 +75,38 @@ function fReg() {
     input5.type = "text";
 
     var buttonEnter = document.createElement("button");
-    buttonEnter.type="button";
+    buttonEnter.type = "button";
 
-    main.append(input1);
+    ul.append(input1);
     input1.placeholder = "User name: ";
     input1.className = "form-control input-style";
 
-    main.append(input2);
+    ul.append(input2);
     input2.placeholder = "Nick name:";
     input2.className = "form-control input-style";
 
-    main.append(input3);
+    ul.append(input3);
     input3.placeholder = "Mail: ";
     input3.className = "form-control input-style";
 
-    main.append(input4);
+    ul.append(input4);
     input4.placeholder = "pass: ";
     input4.className = "form-control input-style";
 
-    main.append(input5);
+    ul.append(input5);
     input5.placeholder = "pass confirm: ";
     input5.className = "form-control input-style";
 
-    main.append(buttonEnter);
+    ul.append(buttonEnter);
     buttonEnter.textContent = "Зарегистрироваться";
     buttonEnter.className = "form-control button-style";
 
-    main.style.background = "#1f0a07";
-    main.style.color = "#1f0a07"
+    ul.style.background = "#1f0a07";
+    ul.style.color = "#1f0a07"
     main.id = "main";
-    document.body.firstElementChild.after(main);
+    main.append(div);
+    div.append(ul);
+
+    return main;
 
 }
