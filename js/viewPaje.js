@@ -31,8 +31,9 @@ function createEnterPanel() {
     var input3 = document.createElement("input");
     input3.type = "text";
 
-    var buttonEnter = document.createElement("button");
-    buttonEnter.type = "button";
+    var buttonEnter = document.createElement("a");
+    buttonEnter.type = "link";
+    buttonEnter.href ="http://localhost:63342/readManga/index.html?_ijt=7fd3e6m7cktbi0tnr9epqlu8lg";
 
     ul.append(input1);
     input1.placeholder = "name: ";
@@ -81,8 +82,9 @@ function createRegistrationPanel() {
     var input5 = document.createElement("input");
     input5.type = "text";
 
-    var buttonEnter = document.createElement("button");
-    buttonEnter.type = "button";
+    var buttonEnter = document.createElement('a');
+    buttonEnter.type = "link";
+    buttonEnter.href ="http://localhost:63342/readManga/index.html?_ijt=7fd3e6m7cktbi0tnr9epqlu8lg";
 
     ul.append(input1);
     input1.placeholder = "User name: ";
