@@ -31,6 +31,9 @@ function createEnterPanel() {
     var input3 = document.createElement("input");
     input3.type = "text";
 
+    var buttonEnter = document.createElement("button");
+    buttonEnter.type = "button";
+
     ul.append(input1);
     input1.placeholder = "name: ";
     input1.className = "form-control input-style";
@@ -42,6 +45,10 @@ function createEnterPanel() {
     ul.append(input3);
     input3.placeholder = "pass: ";
     input3.className = "input-style form-control";
+
+    ul.append(buttonEnter);
+    buttonEnter.textContent = "Войти";
+    buttonEnter.className = "form-control buttonEnter-style";
 
     ul.style.background = "#1f0a07";
     ul.style.color = "#1f0a07"
