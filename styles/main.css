@@ -7,14 +7,27 @@ header {
 
 }
 
+.imgis_parametres {
+    width: 200px;
+    height: 280px;
+}
+
 .button {
     padding-right: 300px;
 }
 main {
+    padding-top: 50px;
     background: #1f0a07;
     height: 2000px;
 
 }
+
+.imegis_link {
+    color: #edd537;
+    background: #1f0a07;
+    text-decoration: none;
+}
+
 body {
     margin: 0px;
 }
@@ -38,6 +51,9 @@ footer {
     border-radius: 5px 5px 5px 5px;
 }
 
+.input-style:focus {
+    background: white;
+}
 .garisontalContainer {
     display: flex;
     justify-content: center;
@@ -60,6 +76,10 @@ footer {
     border:#000 ;
     border-radius: 10px 10px 10px 10px;
     flex-direction: column;
+
+}
+
+.button_Slider {
 
 }
 
@@ -109,12 +129,17 @@ footer {
 }
 
 #gallery {
-    padding-top: 200px;
-    padding-left: 330px;
-}
-.pictures1 {
-    border: 20px solid black;
 
+    width: 60%;
+}
+.main_container {
+    border: 20px solid black;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
 .plasing {
