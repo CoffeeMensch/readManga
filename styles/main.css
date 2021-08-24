@@ -23,6 +23,8 @@ main {
 }
 
 .imegis_link {
+    display: flex;
+    justify-content: center;
     color: #edd537;
     background: #1f0a07;
     text-decoration: none;
@@ -37,6 +39,7 @@ footer {
     height: 50px;
 }
 .input-style {
+
     padding-left: 10px;
     display: flex;
     position: relative;
@@ -51,10 +54,47 @@ footer {
     border-radius: 5px 5px 5px 5px;
 }
 
+#input1 {
+    animation-duration: 1s;
+    animation-name: col;
+}
+#input2 {
+    animation-duration: 1.20s;
+    animation-name: col;
+}
+#input3 {
+    animation-duration: 1.40s;
+    animation-name: col;
+}
+#input4 {
+    animation-duration: 1.60s;
+    animation-name: col;
+}
+#input5 {
+    animation-duration: 1.80s;
+    animation-name: col;
+}
+#input6 {
+    animation-duration: 2s;
+    animation-name: col;
+}
+
+@keyframes col {
+    0% {
+        right: 500px;
+        background-color: #1f0a07;
+    }
+    100% {
+        right: 0px;
+        background-color: #edd537;
+    }
+}
+
 .input-style:focus {
     background: white;
 }
 .garisontalContainer {
+    margin-top: 130px;
     display: flex;
     justify-content: center;
 }
@@ -63,7 +103,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 150px;
 }
 #button-enter {
     padding-right: 30px;
@@ -81,6 +120,27 @@ footer {
 
 .button_Slider {
 
+    background:#edd537;
+    color: #1f0a07;
+    border-color: #000;
+    border-radius: 30px 30px 30px 30px;
+
+    animation-duration: 2s;
+    animation-name: buttons_anim;
+
+}
+
+@keyframes buttons_anim {
+    0% {
+       margin-top: 500px;
+        background-color: #1f0a07;
+        border-radius: 0px 0px 0px 0px;
+    }
+    100% {
+        margin-top: 0;
+        background-color: #edd537;
+    }
+
 }
 
 #button-reg {
@@ -91,9 +151,7 @@ footer {
     background:#000;
     color: #edd537;
     border:#000 ;
-    /*padding-bottom: revert;*/
     border-radius: 10px 10px 10px 10px;
-    /*flex-direction: column;*/
 }
 .button-style {
     display: flex;
@@ -110,6 +168,16 @@ footer {
     flex-direction: row;
     justify-content: space-around;
 
+
+}
+
+@keyframes button_enter {
+    0% {
+        right: 500px
+    }
+    100% {
+        right: 0px;
+    }
 }
 .buttonEnter-style {
     display: flex;
@@ -126,6 +194,7 @@ footer {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
+
 }
 
 #gallery {
@@ -133,8 +202,12 @@ footer {
     width: 60%;
 }
 .main_container {
-    border: 20px solid black;
+    border: 30px solid #1f0a07;
     display: flex;
+    padding-left: 7px;
+    padding-right: 7px;
+    justify-content: center;
+
 }
 
 .container {

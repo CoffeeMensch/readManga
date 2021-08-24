@@ -9,19 +9,19 @@
 </head>
 <body onload="slider_Start()">
 <header>
-    <li class="plasing">
+    <div class="plasing">
         <button id="button-reg" onclick="replaceMainContent('registration')">Регистрация</button>
         <button id="button-enter" onclick="replaceMainContent('enterPanel')">Вход</button>
-    </li>
+    </div>
 </header>
-<main id="main" >
+
+<main id="main">
     <div class="garisontalContainer">
-        <button class="button_Slider" onclick="rightSlide()">Button1</button>
+        <button class="button_Slider" onclick="leftSlide()">Left</button>
         <div id="gallery">
-            <li class="main_container" id="main_container">
-            </li>
+            <li class="main_container" id="main_container"></li>
         </div>
-            <button class="button_Slider" onclick="leftSlide()">Button2</button>
+        <button class="button_Slider" onclick="rightSlide()">Right</button>
     </div>
 </main>
 <footer>

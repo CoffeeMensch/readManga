@@ -16,7 +16,7 @@ let clickCount = 3;
 function rightSlide() {
 clickCount++;
     //first remove
-       if(clickCount===images.length) {
+       if(clickCount===images.length) { //  == 8
            clickCount = 0;
        }
         var main_container = document.getElementById("main_container");
@@ -29,6 +29,7 @@ clickCount--;
 
     if(clickCount === -1) {
         clickCount = images.length-1;
+        clickCount--;
     }
     var main_container = document.getElementById("main_container");
     main_container.lastElementChild.remove();
@@ -105,18 +106,23 @@ function createEnterPanel() {
     ul.append(input1);
     input1.placeholder = "name: ";
     input1.className = "form-control input-style";
+    input1.id = "input1";
+
 
     ul.append(input2);
     input2.placeholder = "mail: ";
     input2.className = "form-control input-style";
+    input2.id = "input2";
 
     ul.append(input3);
     input3.placeholder = "pass: ";
     input3.className = "input-style form-control";
+    input3.id = "input3";
 
     ul.append(buttonEnter);
     buttonEnter.textContent = "Войти";
     buttonEnter.className = "form-control buttonEnter-style";
+    buttonEnter.id = "input6";
 
     ul.style.background = "#1f0a07";
     ul.style.color = "#1f0a07"
@@ -156,26 +162,32 @@ function createRegistrationPanel() {
     ul.append(input1);
     input1.placeholder = "User name: ";
     input1.className = "form-control input-style";
+    input1.id = "input1";
 
     ul.append(input2);
     input2.placeholder = "Nick name:";
     input2.className = "form-control input-style";
+    input2.id = "input2";
 
     ul.append(input3);
     input3.placeholder = "Mail: ";
     input3.className = "form-control input-style";
+    input3.id = "input3";
 
     ul.append(input4);
     input4.placeholder = "pass: ";
     input4.className = "form-control input-style";
+    input4.id = "input4";
 
     ul.append(input5);
     input5.placeholder = "pass confirm: ";
     input5.className = "form-control input-style";
+    input5.id = "input5";
 
     ul.append(buttonEnter);
     buttonEnter.textContent = "Зарегистрироваться";
     buttonEnter.className = "form-control button-style";
+    buttonEnter.id = "input6";
 
     ul.style.background = "#1f0a07";
     ul.style.color = "#1f0a07"
