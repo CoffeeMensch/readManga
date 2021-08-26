@@ -134,99 +134,116 @@ footer {
 }
 
 @keyframes buttons_anim {
-    0% {
-        margin-bottom: 500px;
-        margin-top: 500px;
-        padding-bottom: 500px;
-        padding-top: 500px;
-        background-color: #1f0a07;
-        width: 20px;
-        height: 500px;
-    }
-    100% {
-        margin-bottom: 0;
-        background-color: #edd537;
-    }
+0% {
+    margin-bottom: 500px;
+    margin-top: 500px;
+    padding-bottom: 500px;
+    padding-top: 500px;
+    background-color: #1f0a07;
+    width: 20px;
+    height: 500px;
+/*margin-top: 500px;
+
+background-color: #1f0a07;
+width: 20px;
+height: 300px;*/
+}
+100% {
+margin-bottom: 0;
+background-color: #edd537;
+
+}
 
 }
 
 #button-reg {
-    padding-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    background:#000;
-    color: #edd537;
-    border:#000 ;
-    border-radius: 10px 10px 10px 10px;
+padding-right: 30px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 30px;
+background:#000;
+color: #edd537;
+border:#000 ;
+border-radius: 10px 10px 10px 10px;
 }
 .button-style {
-    display: flex;
-    text-decoration: none;
-    margin-top: 30px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    color: black;
-    border:#000 ;
-    width: 210px;
-    border-radius: 10px 10px 10px 10px;
-    background: #edd537;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-around;
+display: flex;
+text-decoration: none;
+margin-top: 30px;
+padding-top: 12px;
+padding-bottom: 12px;
+color: black;
+border:#000 ;
+width: 210px;
+border-radius: 10px 10px 10px 10px;
+background: #edd537;
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: space-around;
 
 
 }
 
 @keyframes button_enter {
-    0% {
-        right: 500px
-    }
-    100% {
-        right: 0px;
-    }
+0% {
+right: 500px
+}
+100% {
+right: 0px;
+}
 }
 .buttonEnter-style {
-    display: flex;
-    text-decoration: none;
-    margin-top: 30px;
-    color: black;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: 210px;
-    border:#000 ;
-    border-radius: 10px 10px 10px 10px;
-    background: #edd537;
-    color: black;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-around;
+display: flex;
+text-decoration: none;
+margin-top: 30px;
+color: black;
+padding-top: 12px;
+padding-bottom: 12px;
+width: 210px;
+border:#000 ;
+border-radius: 10px 10px 10px 10px;
+background: #edd537;
+color: black;
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: space-around;
 
 }
 
 #gallery {
 
-    width: 60%;
+width: 60%;
 }
 .main_container {
-    border: 30px solid #1f0a07;
-    display: flex;
-    padding-left: 7px;
-    padding-right: 7px;
-    justify-content: center;
+border: 30px solid #1f0a07;
+display: flex;
+padding-left: 7px;
+padding-right: 7px;
+justify-content: center;
 
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
 .plasing {
-    padding-left: 1120px;
-    padding-top: 6px;
-    margin-top: 0px;
+padding-left: 1120px;
+padding-top: 6px;
+margin-top: 0px;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+#canvas {
+    background: wheat;
+    width: 100%;
+  }
 
 
 

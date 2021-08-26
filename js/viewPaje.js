@@ -1,4 +1,5 @@
 const RESOURCE_PATH = "./res/";
+
 function Title(img, url, name) {
     this.img = img;
     this.url = url;
@@ -12,30 +13,44 @@ let images = [new Title("NANA_vol1.jpeg", "", "img_1"), new Title("4905.0x970.we
     new Title("The_Case_Study_of_Vanitas.jpeg", "", "img_7"), new Title("cover.jpeg", "", "img_8")];
 
 let clickCount = 3;
+let countReversClick = 0;
 
 function rightSlide() {
-clickCount++;
+    clickCount++;
+    countReversClick++;
     //first remove
-       if(clickCount===images.length) { //  == 8
-           clickCount = 0;
-       }
-        var main_container = document.getElementById("main_container");
-        main_container.firstElementChild.remove();
-        main_container.append(getImageElement(clickCount));
+    if (clickCount === images.length) { //  == 8
+        clickCount = 0;
+    }
+    if (countReversClick === images.length) {
+        countReversClick = 0;
+    }
+
+    var main_container = document.getElementById("main_container");
+    if(main_container.firstElementChild == null) {
+        return;
+    }
+    main_container.firstElementChild.remove();
+    main_container.append(getImageElement(clickCount));
 
 }
-function leftSlide() {
-clickCount--;
 
-    if(clickCount === -1) {
-        clickCount = images.length-1;
-        clickCount--;
+function leftSlide() {
+    countReversClick--;
+    clickCount--;
+
+    if (clickCount === -1) {
+        clickCount = images.length - 1;
+    }
+    if (countReversClick === -1) {
+        countReversClick = images.length - 1;
     }
     var main_container = document.getElementById("main_container");
     main_container.lastElementChild.remove();
-    main_container.prepend(getImageElement(clickCount))
+    main_container.prepend(getImageElement(countReversClick))
 
 }
+
 function slider_Start() {
     var main_container = document.getElementById('main_container');
     for (let i = 0; i < 4; i++) {
@@ -45,10 +60,9 @@ function slider_Start() {
 
 }
 
-//"S"OLID
 function getImageElement(index) {
     var img = document.createElement("img");
-    img.src = RESOURCE_PATH +images[index].img;
+    img.src = RESOURCE_PATH + images[index].img;
     img.className = "imgis_parametres";
 
     let div = document.createElement('div');
@@ -65,7 +79,6 @@ function getImageElement(index) {
 }
 
 
-
 function replaceMainContent(nameContent) {
 
     var data = document.getElementById("main");
@@ -79,7 +92,6 @@ function replaceMainContent(nameContent) {
             content = createEnterPanel();
             break;
     }
-
     document.body.firstElementChild.after(content);
 }
 
@@ -196,5 +208,6 @@ function createRegistrationPanel() {
     div.append(ul);
 
     return main;
-
 }
+
+
